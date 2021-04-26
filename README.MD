@@ -2,13 +2,11 @@
 
 ## Compile
 
-To compile on a Linux system type `make`. 
+`make` to compile. 
 
 This will create a statically linked library file  `libsoundctrl.so` in `bin/` as well as `/usr/lib/`
 
 ## API
-
-### The library exposes the following API:
 
 1. Get system volume range (in dB):
 	
@@ -24,7 +22,7 @@ This will create a statically linked library file  `libsoundctrl.so` in `bin/` a
 
 ## Use
 
-### The library can be PInvoked from C#
+### The library can be PInvoked (C# example)
 
 ```C#
 [DllImport("libsoundctrl.so", EntryPoint = "set_volume", CallingConvention = CallingConvention.Cdecl)]
